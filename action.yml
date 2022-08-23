@@ -1,0 +1,22 @@
+name: 'Caprover Webhook Deploy Action'
+description: 'Action to deploy to Caprover via provided webhook URL'
+author: 'Sopheak Sek'
+branding:
+  icon: upload-cloud
+  color: blue
+inputs:
+  server:
+    description: 'Caprover URL. Ex. https://captain.root.domain.com'
+    required: true
+  password:
+    description: 'Caprover password. Use $\{{ secrets.CAPROVER_PASSWORD }} for better security.'
+    required: true
+  appname:
+    description: 'Application name on the Caprover.'
+    required: true
+  webhook:
+    description: 'Webhook URL to send the deploy request to.'
+    required: true 
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
