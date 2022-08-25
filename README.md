@@ -1,6 +1,7 @@
 # caprover-webhook-deploy
 
-Github actions to deploy to caprover via webhook URL
+Github actions to deploy to caprover via webhook URL.
+Setting webhook inside repo setting would not provide any valuable information when deploying.
 
 ## Inputs
 
